@@ -33,6 +33,10 @@ h1,h2,h3,h4{
     flex-basis: 50%;
 }
 
+.ancho33{
+    flex-basis: 33%; 
+}
+
 
 .grid{
     display: grid;
@@ -103,7 +107,7 @@ nav a:hover{
 }
 .ancho50 .textoDerecha{
     font-size: 1.3em;
-    line-height: 1.3em;
+    line-height: 1.4em;
     margin-bottom: 15px;
     margin-left: 0;
 }
@@ -123,6 +127,7 @@ h2{
 
 .contenidoSuperior p{
     text-align: center;
+    padding: 0 50px;
     
 }
 
@@ -147,6 +152,41 @@ h3{
     line-height: 1.2em;
     margin-bottom: 50px;
     margin-left: 50px;
+}
+
+.anchoMaximo.ancho33{
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ancho33{
+    align-items: center;
+}
+
+.ancho33 h3{
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 5px;  
+}
+
+.fotos{
+    width: 50%;
+    min-height: 200px;
+    margin-left: 131px;
+    margin-bottom: 50px;
+    border: 4px solid #CCBB33;
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.536);
+}
+
+.foto3{
+    width: 50%;
+    min-height: 222px;
+    margin-left: 131px;
+    margin-bottom: 50px;
+    border: 4px solid #CCBB33;
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.536);
 }
 
 
@@ -186,7 +226,7 @@ form{
     width: 30%;
     margin: 30px auto;
     background: #CCBB33;
-    color: #FFF;
+    color: #000;
 
 }
 
@@ -196,7 +236,8 @@ form a{
     border: none;
     background: none;
     text-decoration: none;
-    font-size: 0.9em;
+    font-size: 1em;
+    font-weight: bold;
     color: #023919;
 }
 
