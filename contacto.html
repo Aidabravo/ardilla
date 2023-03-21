@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La ardilla, un animal de los bosques</title>
+
+    <!-- Link a fuentes de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,400&family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- reseteo de navegador -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- mis estilos css -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+</head>
+<body>
+
+    <!-- Cabecera principal -->
+    <header class="cabeceraPrincipal">
+            <!-- Logo de cabecera principal -->
+            
+            <div class="cabecera anchoMaximo flex">
+                <h1><span class="titulo">La ardilla</span><br> el pequeño huésped de los bosques</h1>
+                
+            </div>
+    
+            <!-- Menú de navegación -->
+            <div>
+                <nav class="navegacion">
+
+                    <ul class="flex">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="arte-ardilla.html">Arte</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    
+    </header>
+
+    <!--Contenido principal-->
+    <main>
+
+        <div class="anchoMaximo flex">
+            <div class="contenidoSuperior">
+                <h2>Comparte con nosotros</h2>
+    
+                <p>Mándanos tus anécdotas personales, curiosidades, información de interés... todo lo que se te ocurra sobre estos simpáticos animales y lo publicaremos en nuestra web para compartir con otros amantes de las ardillas.
+                </p>
+    
+            </div>
+
+        </div>
+
+
+        <section class="anchoMaximo">
+            
+            <form action="http://cgi.dominio.es/FormMail.pl"  method="post" name="form-contacto"  id="form-contacto" enctype="multipart/form-data" novalidate>
+
+                <!-- CAMPO NOMBRE  -->
+                <div class="campos">
+
+                    <!--------INSERTAMOS UN SPAN PARA METER UN MENSAJE DE ERROR EN ROJO -------->
+                    <span class="mensaje-error" id="msj-nombre">Escribe tu nombre.</span>
+                    <!-- ------------------------------------------------------------------- -->
+
+                    <input type="text" name="dato-usuario" id="dato-usuario" 
+                    placeholder="Nombre">
+                    
+                </div>
+
+                <!-- CAMPO CONSULTA  --> 
+                <div class="campos">
+                    
+        
+                    <!--------INSERTAMOS UN SPAN PARA METER UN MENSAJE DE ERROR EN ROJO -------->
+                    <span class="mensaje-error" id="msj-comparte">Escriba su información.</span>
+                    <!-- ------------------------------------------------------------------- -->    
+        
+                    <textarea name="dato-comparte" id="dato-comparte" cols="30" rows="10" placeholder="Comparte tu información..."></textarea>
+                </div>
+          
+                <!-- CAMPO CLAUSULAS DE ENVÍO  --> 
+                <div class="campos"> 
+                    <input type="checkbox" name="dato-clausulas" id="dato-clausulas" value="1">
+                    <label for="dato-clausulas">
+                    <span></span>Acepto la
+                    </label>
+        
+                    <a href="#">Política de privacidad</a> 
+        
+                    <!--------INSERTAMOS UN SPAN PARA METER UN MENSAJE DE ERROR EN ROJO -------->
+                    <span class="mensaje-error" id="msj-clausulas">Debe aceptar la Política de privacidad.</span>
+                    <!----------------------------------------------- -->  
+                </div>
+
+                <!-- Botón de enviar formulario -->
+                <div class="campos">             
+                    <input type="submit" value="ENVIAR INFORMACIÓN">
+                </div>
+
+            </form> <!-- FIN Formulario -->
+           
+
+        </section>
+
+
+
+        <!-- ------footer------------- -->
+    <footer class="footerPrincipal">
+
+        <div class="footerFinal">
+            <p class="copyright">&copy; Mundo animal. <span>Todos los derechos reservados.</span></p>
+        </div>
+
+    </footer>
+
+    </main>
+
+
+    <script src="js/validar-formulario.js"></script>
+</body>
+</html>

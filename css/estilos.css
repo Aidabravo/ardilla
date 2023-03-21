@@ -1,0 +1,281 @@
+/* estilos de la weba ardilla */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+p{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+
+
+
+
+/* -------ESTILOS ESTRUCTURALES--------- */
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ancho50{
+    flex-basis: 50%;
+}
+
+
+.grid{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+}
+
+
+.anchoMaximo{ /* para dar un ancho máximo a la cabecera y no crezca más cuando la ventana es muy grande */
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+/* ---------HEADER PRINCIPAL Y NAVEGACIÓN-------------- */
+.cabeceraPrincipal{
+    background: url('../imagenes/ardilla1-header.jpg') center center / cover;
+    min-height: 250px;
+}
+
+
+
+h1{
+    color: #CCBB33;
+    font-size: 3em;
+    text-shadow: 2px 2px 3px #000;
+}
+
+
+
+.navegacion{
+    background-color: #023919;
+    margin-top: 250px;
+    padding: 12px;  
+}
+
+nav a{
+    text-decoration: none;
+    color: #CCBB33;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.4em;
+    padding: 0 30px;
+}
+
+nav a:hover{
+    color: #FFF;
+}
+
+.navegacion ul{
+    list-style-type: none;
+    justify-content: center;
+}
+
+.titulo{
+    font-size: 3em;
+    
+}
+
+
+/* secciones */
+
+.ancho50 img{
+    width: 85%;
+    margin: 50px 50px;
+    border: 4px solid #CCBB33;
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.536);
+}
+.ancho50 .textoDerecha{
+    font-size: 1.3em;
+    line-height: 1.3em;
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+
+
+
+h2{
+    margin-top: 40px;
+    font-size: 2.5em;
+    font-weight: 400;
+    color: #CCBB33;
+}
+
+.contenidoSuperior h2{
+    text-align: center;
+}
+
+.contenidoSuperior p{
+    text-align: center;
+    
+}
+
+.pelicula{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.ancho50 .pelicula{
+    margin-bottom: 10px; 
+    
+}
+
+h3{
+    font-size: 1.5em;
+    margin-left: 50px;
+}
+
+
+.ancho50 p{
+    font-size: 1em;
+    line-height: 1.2em;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+
+
+
+
+/* -----------------Footer principal-------------- */
+.footerPrincipal{
+    background: #000;
+    padding: 15px; 
+}
+
+
+
+.footerFinal{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 15px;
+    color: #dfd7d7;
+}
+
+
+/* ----------------estilos formulario----------------- */
+/* ESTA REGLA ES PARA IDENTIFICAR LA CAJA DEBAJO DEL NOMBRE DONDE HEMOS ESCRITO UN MENSAJE NUEVO  */
+.mensaje-error{
+    display: inline-block;
+    padding: 10px 5px 5px 20px;
+    font-size: 0.8em;
+    color: #000;
+    display: none;
+}
+
+
+form{
+    font-family: 'Work Sans', sans-serif;
+    width: 30%;
+    margin: 30px auto;
+    background: #CCBB33;
+    color: #FFF;
+
+}
+
+form a{
+    padding:0;
+    margin: 0;
+    border: none;
+    background: none;
+    text-decoration: none;
+    font-size: 0.9em;
+    color: #023919;
+}
+
+form a:hover {
+    color: #FFF;
+}
+
+
+input[type="text"]{
+    width: 90%;
+    padding: 0.8em;
+    margin: 10px 20px 20px;
+    border: none;
+    outline: none;
+    color: #6E6E6E;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+textarea{
+    width: 90%;
+    padding: 0.8em;
+    margin: 0 20px;
+    border: none;
+    outline: none;
+    color: #6E6E6E;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+input[type="text"]:focus,
+textarea:focus{
+     -webkit-box-shadow: 2px 2px 2px #757070;
+     -moz-box-shadow: 2px 2px 2px #757070;
+     box-shadow: 2px 2px 2px #757070;
+}  
+
+
+input[name="dato-clausulas"]{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+label[for="dato-acepto-clausulas"]{
+    margin-right: 2em;
+}
+
+input[type="submit"]{
+    
+    width: 90%;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #023919;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;  
+    background: #023919;
+    color: #FFF;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+
+input[type="submit"]:hover{
+    background: #f0eded;
+    color: #023919;
+    border: none;
+}
+
+
+
+  
+
+
+
+
+
