@@ -349,3 +349,18 @@ experiencias
     color:  #CCBB33;
 }
 
+.experienciaTxt{
+    margin-top: 4em;
+}
+.experienciaTxt h3{
+    margin-bottom: 1em;
+    margin-left: 0;
+}
+
+.experienciaTxt p{
+    margin-bottom: 2em;
+}
+.ancho50.experienciaTxt .textoDerecha {
+    
+    margin-bottom: 3em;
+}
