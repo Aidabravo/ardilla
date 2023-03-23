@@ -317,6 +317,35 @@ input[type="submit"]:hover{
   
 
 
+/* ---------------------------------------------------------------------------------------------------
 
+experiencias
 
+---------------------------------------------------------------------------------------------------*/
+
+.ancho50 .pelicula.imagenexp {
+    margin-bottom: 50px;
+}
+
+.experiencia{
+    text-align: center;
+    margin-bottom: 4em;
+
+}
+
+.experiencia1 {
+    color: white;
+    background:  #CCBB33;
+    padding: 15px 50px;
+    border-radius: 25px;
+    font-size: 1.3em;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.experiencia1:hover {
+    background-color: black;
+    color:  #CCBB33;
+}
 
