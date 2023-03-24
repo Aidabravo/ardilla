@@ -370,3 +370,9 @@ experiencias
 .ancho50.experienciaTxt .textoDerecha {
     margin-bottom: 2em;
 }
+
+
+/* form input archivos */
+.archivos{
+    margin: 10px 20px;
+}
